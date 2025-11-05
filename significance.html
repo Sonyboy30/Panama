@@ -1,24 +1,84 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Legacy & Significance | Panama Canal Museum</title>
-  <link href="/css/style.css" rel="stylesheet" />
-  <script defer src="/js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-  <div data-include="/PCM/partials/header.html"></div>
+  <header class="sub-hero" style="background-image: url('assets/first-ship.jpg');">
+    <nav class="navbar">
+      <h1 class="logo">Panama Canal Museum</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="historical.html">Historical Background</a></li>
+        <li><a href="construction.html">Construction & Challenges</a></li>
+        <li><a href="impact.html">Social & Political Impact</a></li>
+        <li><a href="significance.html" class="active">Legacy & Significance</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="bibliography.html">Bibliography</a></li>
+      </ul>
+    </nav>
 
-  <main class="container prose">
-    <h1>Legacy &amp; Significance</h1>
-    <p class="lede">Opened in 1914, the canal reshaped global trade. It remains vital after handover to Panama (1999) and expansion (2016) that added new, larger locks.</p>
+    <div class="hero-text fade-in">
+      <h2>Legacy & Significance</h2>
+      <p>The Canal’s global impact, lasting symbolism, and modern transformation.</p>
+    </div>
+  </header>
 
-    <figure class="wide">
-      <img src="/PCM/assets/ss-ancon.jpg" alt="SS Ancon first transit"/>
-      <figcaption><em>SS Ancon</em> during the first official transit, August 15, 1914.</figcaption>
-    </figure>
+  <main class="content fade-in">
+    <!-- Based on History.com “Panama Canal” and Office of the Historian “Building the Panama Canal, 1903–1914” -->
+    <section>
+      <p>
+        Completed in <strong>1914</strong>, the Panama Canal revolutionized global trade by 
+        providing a direct maritime route between the Atlantic and Pacific Oceans. 
+        It became one of the most critical transportation corridors in the world, 
+        connecting over <strong>160 countries</strong> and <strong>1,700 ports</strong>.
+      </p>
+
+      <p>
+        Beyond engineering, the Canal symbolized a new era of U.S. influence. 
+        Its construction demonstrated America’s growing role as a global power and 
+        highlighted the intersection of innovation, diplomacy, and imperial ambition.
+      </p>
+
+      <p>
+        Over time, the Canal evolved into a shared symbol of both achievement and inequality. 
+        For Panama, it represented both opportunity and the struggle for sovereignty. 
+        In <strong>1977</strong>, the <em>Torrijos–Carter Treaties</em> set the process for 
+        transferring control to Panama, which was completed on <strong>December 31, 1999</strong>. 
+        This historic handover marked a new chapter in Panamanian independence and pride.
+      </p>
+
+      <p>
+        Today, the <strong>Panama Canal Authority</strong> manages the waterway as a national asset. 
+        Expansion projects completed in 2016 allow massive “New Panamax” ships to pass, 
+        reaffirming the canal’s central role in 21st-century trade and sustainability.
+      </p>
+
+      <p>
+        More than a century after its completion, the Panama Canal endures as a 
+        <strong>monument to global cooperation and human perseverance</strong> — a 
+        powerful reminder of how vision and determination can reshape the world.
+      </p>
+    </section>
+
+    <section class="image-gallery fade-in">
+      <figure>
+        <img src="assets/first-ship.jpg" alt="First ship through the Panama Canal in 1914">
+        <figcaption>The SS <em>Ancon</em>, the first ship to pass through the Canal on August 15, 1914.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/french-failure.jpeg" alt="Modern aerial view of Panama Canal expansion">
+        <figcaption>The modernized canal continues to expand global connectivity.</figcaption>
+      </figure>
+    </section>
   </main>
 
-  <div data-include="/PCM/partials/footer.html"></div>
+  <footer>
+    <p>Created by Arav & Deniz — © 2025 Panama Canal Digital Museum</p>
+  </footer>
 </body>
 </html>
