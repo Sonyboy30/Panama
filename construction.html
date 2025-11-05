@@ -1,40 +1,77 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Construction & Challenges | Panama Canal Museum</title>
-  <link href="/css/style.css" rel="stylesheet" />
-  <script defer src="/js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-  <div data-include="/PCM/partials/header.html"></div>
+  <header class="sub-hero" style="background-image: url('assets/culebra-cut.jpg');">
+    <nav class="navbar">
+      <h1 class="logo">Panama Canal Museum</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="historical.html">Historical Background</a></li>
+        <li><a href="construction.html" class="active">Construction & Challenges</a></li>
+        <li><a href="impact.html">Social & Political Impact</a></li>
+        <li><a href="significance.html">Legacy & Significance</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="bibliography.html">Bibliography</a></li>
+      </ul>
+    </nav>
 
-  <main class="container prose">
-    <h1>Construction &amp; Challenges</h1>
-    <p class="lede">Americans adopted a lock-based plan. Dr. William Gorgas’s sanitation campaign slashed malaria and yellow fever. Excavation at Culebra Cut and building the Gatún/Miraflores/Pedro Miguel locks tested new methods and the workforce’s endurance.</p>
-
-    <div class="split">
-      <div>
-        <img src="/PCM/assets/culebra-postcard.jpg" alt="Culebra Cut early works" class="elevate"/>
-        <figcaption class="muted">Culebra Cut excavation.</figcaption>
-      </div>
-      <div>
-        <img src="/PCM/assets/gorgas-map.jpg" alt="Sanitized areas map" class="elevate"/>
-        <figcaption class="muted">Sanitation zones against malaria‑carrying mosquitoes.</figcaption>
-      </div>
+    <div class="hero-text fade-in">
+      <h2>Construction & Challenges</h2>
+      <p>Innovation, disease control, and determination defined the canal’s construction era.</p>
     </div>
+  </header>
 
-    <div class="callout">
-      <strong>Try it:</strong> Drag the handle in the slider below to compare excavation stages.
-    </div>
+  <main class="content fade-in">
+    <!-- Based on PBS "Creating the Canal" and National Archives "The Panama Canal" -->
+    <section>
+      <p>
+        When the United States began construction of the Panama Canal in 1904, Chief Engineer 
+        <strong>John Stevens</strong> and later <strong>George Washington Goethals</strong> led the effort 
+        to overcome immense natural and logistical obstacles. 
+      </p>
+      <p>
+        The American engineers abandoned the French plan for a sea-level canal, opting instead for a 
+        <strong>lock-and-dam system</strong> to manage the drastic changes in elevation and control flooding. 
+        This decision, along with new excavation machinery and careful organization, made the project feasible.
+      </p>
+      <p>
+        Early on, diseases such as malaria and yellow fever devastated the workforce. 
+        <strong>Dr. William Gorgas</strong> implemented a revolutionary sanitation campaign—draining swamps, 
+        fumigating buildings, and eliminating mosquito breeding grounds—that virtually eradicated these illnesses 
+        and made sustained work possible.
+      </p>
+      <p>
+        By 1913, workers had excavated over <strong>200 million cubic yards</strong> of earth. 
+        Despite landslides, intense heat, and dangerous explosions, the canal opened the following year, 
+        symbolizing one of the greatest engineering feats in history.
+      </p>
+    </section>
 
-    <div class="compare" data-compare>
-      <img src="/PCM/assets/culebra-early.jpg" alt="Before"/>
-      <img src="/PCM/assets/culebra-late.jpg" alt="After"/>
-      <div class="handle" aria-hidden="true"></div>
-    </div>
+    <section class="image-gallery fade-in">
+      <figure>
+        <img src="assets/culebra-cut.jpg" alt="Excavation at Culebra Cut">
+        <figcaption>Culebra Cut — the most difficult and dangerous excavation site.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/gorgas-map.jpeg" alt="Dr. Gorgas’s sanitation plan for disease control">
+        <figcaption>Dr. Gorgas’s sanitation map showing anti-mosquito zones.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/workers.jpg" alt="Workers constructing the canal">
+        <figcaption>Thousands of international workers made the canal possible.</figcaption>
+      </figure>
+    </section>
   </main>
 
-  <div data-include="/PCM/partials/footer.html"></div>
+  <footer>
+    <p>Created by Arav & Deniz — © 2025 Panama Canal Digital Museum</p>
+  </footer>
 </body>
 </html>
