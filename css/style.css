@@ -1,105 +1,291 @@
-:root{
-  --bg:#0b1422; --panel:#121c2a; --ink:#e9eef8; --muted:#a9b7d1; --brand:#4fb6ff; --brand-2:#ffd166;
-}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);}
-img{max-width:100%;height:auto;display:block;border-radius:12px}
-.container{max-width:1100px;margin-inline:auto;padding:24px}
-.display{font-size:clamp(28px,4vw,44px);margin:0 0 8px}
-.lede{font-size:1.125rem;color:var(--muted)}
-.muted{color:var(--muted)}
-.btn{background:var(--brand);color:#081221;border:none;border-radius:999px;padding:10px 16px;font-weight:700;text-decoration:none;display:inline-block}
-.btn.outline{background:transparent;border:2px solid var(--brand);color:var(--ink)}
-.btn.ghost{background:transparent;border:1px solid #2a3a53}
-
-/* header */
-.site-header{position:sticky;top:0;z-index:50;background:rgba(11,20,34,.8);backdrop-filter:blur(6px);border-bottom:1px solid #18263c}
-.nav-wrap{display:flex;align-items:center;gap:16px}
-.brand{font-weight:800;letter-spacing:.5px}
-.nav{display:flex;gap:18px;margin-left:auto}
-.nav a{color:var(--ink);text-decoration:none;padding:10px 8px;border-radius:10px}
-.nav a.active,.nav a:hover{background:#1a2940}
-.nav-toggle{display:none;background:#1a2940;color:var(--ink);border:none;border-radius:10px;padding:8px 10px}
-@media (max-width:840px){
-  .nav{display:none;flex-direction:column;position:absolute;right:16px;top:64px;background:#0f1827;border:1px solid #20314d;border-radius:12px;padding:8px;width:min(90vw,360px)}
-  .nav.open{display:flex}
-  .nav-toggle{display:inline-block;margin-left:auto}
+/* ----------------------------------------
+   PANAMA CANAL MUSEUM — MODERN INTERACTIVE STYLE
+   Navy Blue Theme
+----------------------------------------- */
+:root {
+  --navy: #0a1d37;
+  --mid-navy: #143861;
+  --accent: #f4b400;
+  --white: #f9f9f9;
+  --light-gray: #d0d4db;
 }
 
-/* hero */
-.hero{position:relative;isolation:isolate}
-.hero-img{width:100%;max-height:520px;object-fit:cover;filter:grayscale(20%)}
-.hero-text{position:absolute;inset:auto 0 5%;text-align:left}
-.hero-text .display{color:white;text-shadow:0 10px 25px rgba(0,0,0,.5)}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
 
-.grid-2{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;margin-top:28px}
-@media (max-width:900px){.grid-2{grid-template-columns:1fr}}
-.gap-xl{gap:40px}
-.align-center{align-items:center}
+body {
+  background-color: var(--white);
+  color: var(--navy);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
 
-/* carousel */
-.carousel{position:relative}
-.car-track{display:flex;overflow:hidden;scroll-behavior:smooth}
-.car-slide{min-width:100%;padding:0 4px}
-.car-btn{position:absolute;top:50%;translate:0 -50%;background:#0f1827;border:1px solid #20314d;color:#fff;width:36px;height:36px;border-radius:999px}
-.car-btn.prev{left:8px}
-.car-btn.next{right:8px}
-.car-dots{display:flex;justify-content:center;gap:6px;margin-top:8px}
-.car-dots button{width:8px;height:8px;border-radius:999px;border:none;background:#2a3a53}
-.car-dots button.active{background:var(--brand)}
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--navy);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:40px auto}
-@media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.cards{grid-template-columns:1fr}}
-.card{background:var(--panel);border:1px solid #20314d;border-radius:16px;padding:18px}
+.logo {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
 
-.prose h1{margin:12px 0 8px}
-.prose p{line-height:1.6}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-@media (max-width:860px){.gallery{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.gallery{grid-template-columns:1fr}}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
 
-.split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-block:16px}
-@media (max-width:860px){.split{grid-template-columns:1fr}}
-.elevate{box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
 
-.callout{background:#0f1827;border:1px solid #20314d;border-left:4px solid var(--brand-2);padding:12px 14px;border-radius:10px;margin:16px 0}
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);
+}
 
-/* before/after compare */
-.compare{position:relative;max-width:900px;margin:16px auto;border-radius:14px;overflow:hidden}
-.compare img{position:absolute;inset:0;width:100%}
-.compare img:first-child{clip-path:inset(0 50% 0 0)}
-.compare .handle{position:absolute;inset:0;left:50%;width:3px;background:var(--brand-2);box-shadow:0 0 0 2px #0b1422;cursor:ew-resize}
+/* ---------- Mobile Nav ---------- */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--white);
+  cursor: pointer;
+}
 
-/* modal */
-.modal{border:none;max-width:min(900px,92vw);padding:0;background:#0b1422;border-radius:16px}
-.modal::backdrop{background:rgba(0,0,0,.5)}
-.modal-body{padding:0}
-.ratio-16x9{position:relative;padding-top:56.25%}
-.ratio-16x9 iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.modal-close{position:absolute;top:8px;right:10px;background:#111c2b;border:none;color:#fff;font-size:22px;border-radius:10px;padding:2px 8px}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--navy);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    text-align: center;
+    padding: 1rem;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
 
-/* timeline */
-.timeline-controls{display:flex;gap:12px;align-items:center;margin:10px 0}
-.timeline{display:grid;grid-auto-flow:column;grid-auto-columns:min(280px, 80vw);gap:14px;overflow-x:auto;padding-bottom:8px}
-.tl-card{background:var(--panel);border:1px solid #20314d;border-radius:14px;padding:14px;position:relative}
-.tl-date{font-weight:800;color:var(--brand)}
-.tl-era{position:absolute;top:10px;right:12px;font-size:.75rem;color:var(--muted)}
-.tl-title{margin:6px 0}
-.tl-card details{margin-top:4px}
+/* ---------------- HERO ---------------- */
+header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  background-attachment: fixed;
+  background-image: url('../assets/hero-canal.jpg');
+}
 
-/* bibliography */
-.biblio{display:grid;gap:12px;counter-reset:item}
-.biblio li{list-style:none;background:var(--panel);border:1px solid #20314d;border-radius:12px;padding:12px}
-.biblio li::before{counter-increment:item;content:counter(item)". ";color:var(--brand);font-weight:800;margin-right:6px}
-.biblio li:hover{outline:2px dashed var(--brand-2)}
-.biblio li[data-note]:hover::after{content:attr(data-note);display:block;color:var(--muted);font-size:.85rem;margin-top:6px}
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 29, 55, 0.5);
+}
 
-.site-footer{border-top:1px solid #18263c;margin-top:40px}
+header .hero-text {
+  position: relative;
+  z-index: 1;
+}
 
-/* reveal on scroll */
-.reveal{opacity:0;translate:0 10px;transition:opacity .6s ease, translate .6s ease}
-.reveal.in{opacity:1;translate:0 0}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+  color: var(--white);
+}
 
-/* utility */
-.wide img{width:100%}
+header p {
+  color: var(--light-gray);
+  font-size: 1.2rem;
+}
+
+/* --------------- YOUTUBE VIDEO --------------- */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 3rem auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ---------------- CONTENT ---------------- */
+section {
+  padding: 4rem 6%;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--mid-navy);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+/* ---------------- IMAGES ---------------- */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.image-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- TIMELINE ---------------- */
+.timeline {
+  position: relative;
+  margin: 3rem auto;
+  padding: 1rem 0;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  background: var(--accent);
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 45%;
+  padding: 1rem 1.5rem;
+  background: #f3f6fb;
+  border-radius: 10px;
+  margin: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item.left {
+  left: 0;
+}
+.timeline-item.right {
+  left: 55%;
+}
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  border-radius: 50%;
+  z-index: 10;
+}
+.timeline-item.left::after {
+  right: -10px;
+}
+.timeline-item.right::after {
+  left: -10px;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline-item {
+    width: 90%;
+    left: 5% !important;
+  }
+  .timeline-item::after {
+    left: -10px;
+  }
+}
+
+/* ---------------- BUTTONS ---------------- */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  background: var(--accent);
+  color: var(--navy);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background: #ffd65c;
+  transform: translateY(-2px);
+}
+
+/* ---------------- SCROLL TOP ---------------- */
+#scrollTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--accent);
+  color: var(--navy);
+  border: none;
+  border-radius: 50%;
+  padding: 0.7rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  display: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+#scrollTop:hover {
+  background: #ffd65c;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
