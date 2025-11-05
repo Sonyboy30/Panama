@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Timeline | Panama Canal Museum</title>
+  <link href="/css/style.css" rel="stylesheet" />
+  <script defer src="/js/script.js"></script>
+</head>
+<body>
+  <div data-include="/PCM/partials/header.html"></div>
+
+  <main class="container">
+    <h1>Interactive Timeline</h1>
+    <p class="muted">Filter by era or search. Click an event to expand sources. (You can paste events from your “timeline source” into <code>timelineData</code> in <em>js/script.js</em>.)</p>
+
+    <div class="timeline-controls">
+      <label>Era
+        <select id="eraFilter">
+          <option value="all">All</option>
+          <option value="French">French Attempt</option>
+          <option value="U.S.">U.S. Construction</option>
+          <option value="Operations">Operations &amp; Handover</option>
+        </select>
+      </label>
+      <input id="tlSearch" type="search" placeholder="Search events..." />
+    </div>
+
+    <div id="timeline" class="timeline" aria-live="polite"></div>
+  </main>
+
+  <div data-include="/PCM/partials/footer.html"></div>
+</body>
+</html>
