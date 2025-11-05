@@ -1,35 +1,69 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Historical Background | Panama Canal Museum</title>
-  <link href="/css/style.css" rel="stylesheet" />
-  <script defer src="/js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-  <!-- include same header nav as index -->
-  <div data-include="/PCM/partials/header.html"></div>
+  <header class="sub-hero" style="background-image: url('assets/french-failure.jpeg');">
+    <nav class="navbar">
+      <h1 class="logo">Panama Canal Museum</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="historical.html" class="active">Historical Background</a></li>
+        <li><a href="construction.html">Construction & Challenges</a></li>
+        <li><a href="impact.html">Social & Political Impact</a></li>
+        <li><a href="significance.html">Legacy & Significance</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="bibliography.html">Bibliography</a></li>
+      </ul>
+    </nav>
 
-  <main class="container prose">
-    <h1>Historical Background</h1>
-    <p class="lede">The dream of linking the Atlantic and Pacific dates to the 1500s. By the late 19th century, French engineer Ferdinand de Lesseps — builder of the Suez — began construction. Disease, landslides, and finances doomed the attempt. In 1903, the U.S. supported Panamanian independence and took over the project, completing the canal in 1914.</p>
-
-    <div class="gallery" data-lightbox>
-      <figure>
-        <img src="/PCM/assets/french-failure.jpg" alt="French engineers in the 1880s"/>
-        <figcaption>French engineers struggle in the tropics (1880s).</figcaption>
-      </figure>
-      <figure>
-        <img src="/PCM/assets/roosevelt-cut.jpg" alt="Roosevelt visit 1906"/>
-        <figcaption>President Roosevelt’s 1906 visit boosted morale.</figcaption>
-      </figure>
-      <figure>
-        <img src="/PCM/assets/west-indian-workers.jpg" alt="Workers from the Caribbean and Latin America"/>
-        <figcaption>Workers came from across the Caribbean and Latin America.</figcaption>
-      </figure>
+    <div class="hero-text fade-in">
+      <h2>Historical Background</h2>
+      <p>From dream to reality — the early struggles and global ambitions that shaped the canal’s creation.</p>
     </div>
+  </header>
+
+  <main class="content fade-in">
+    <section>
+      <p>
+        The dream of connecting the Atlantic and Pacific Oceans dates back to the 1500s, when explorers imagined a shortcut
+        through the Isthmus of Panama. By the late 19th century, French engineer <strong>Ferdinand de Lesseps</strong>,
+        who had successfully built the Suez Canal, attempted to construct a similar sea-level canal in Panama.
+      </p>
+      <p>
+        However, the French effort collapsed due to constant landslides, tropical diseases such as malaria and yellow fever,
+        and devastating financial mismanagement. Thousands of workers died, and the project was abandoned.
+      </p>
+      <p>
+        In 1903, the United States under President <strong>Theodore Roosevelt</strong> supported Panama’s independence
+        from Colombia and negotiated rights to build and control the canal zone. The American effort would go on to complete
+        one of the most ambitious engineering projects in human history by 1914.
+      </p>
+    </section>
+
+    <section class="image-gallery fade-in">
+      <figure>
+        <img src="assets/french-failure.jpeg" alt="French engineers struggle in tropical terrain, 1880s">
+        <figcaption>French engineers struggle in tropical terrain, 1880s.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/roosevelt-visit.jpg" alt="President Theodore Roosevelt visiting Panama in 1906">
+        <figcaption>President Roosevelt’s 1906 visit boosted morale and progress.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/workers.jpg" alt="Workers from across the Caribbean and Latin America">
+        <figcaption>Workers from across the Caribbean and Latin America helped build the canal.</figcaption>
+      </figure>
+    </section>
   </main>
 
-  <div data-include="/PCM/partials/footer.html"></div>
+  <footer>
+    <p>Created by Arav & Deniz — © 2025 Panama Canal Digital Museum</p>
+  </footer>
 </body>
 </html>
