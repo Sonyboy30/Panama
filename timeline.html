@@ -1,33 +1,101 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Interactive Timeline | Panama Canal Museum</title>
-  <link href="/css/style.css" rel="stylesheet" />
-  <script defer src="/js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timeline | Panama Canal Museum</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-  <div data-include="/PCM/partials/header.html"></div>
+  <header class="sub-hero" style="background-image: url('assets/culebra-cut.jpg');">
+    <nav class="navbar">
+      <h1 class="logo">Panama Canal Museum</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="historical.html">Historical Background</a></li>
+        <li><a href="construction.html">Construction & Challenges</a></li>
+        <li><a href="impact.html">Social & Political Impact</a></li>
+        <li><a href="significance.html">Legacy & Significance</a></li>
+        <li><a href="timeline.html" class="active">Timeline</a></li>
+        <li><a href="bibliography.html">Bibliography</a></li>
+      </ul>
+    </nav>
 
-  <main class="container">
-    <h1>Interactive Timeline</h1>
-    <p class="muted">Filter by era or search. Click an event to expand sources. (You can paste events from your “timeline source” into <code>timelineData</code> in <em>js/script.js</em>.)</p>
-
-    <div class="timeline-controls">
-      <label>Era
-        <select id="eraFilter">
-          <option value="all">All</option>
-          <option value="French">French Attempt</option>
-          <option value="U.S.">U.S. Construction</option>
-          <option value="Operations">Operations &amp; Handover</option>
-        </select>
-      </label>
-      <input id="tlSearch" type="search" placeholder="Search events..." />
+    <div class="hero-text fade-in">
+      <h2>Timeline of the Panama Canal</h2>
+      <p>Key moments from the dream to the completion of the Canal (1869–1914).</p>
     </div>
+  </header>
 
-    <div id="timeline" class="timeline" aria-live="polite"></div>
+  <main class="content fade-in">
+    <!-- All information summarized from PBS “Creating the Canal” timeline -->
+    <section class="timeline">
+      <div class="timeline-item">
+        <h3>1869 — The Vision Begins</h3>
+        <p>
+          French engineer <strong>Ferdinand de Lesseps</strong> completes the Suez Canal in Egypt. 
+          The same year, U.S. President <strong>Ulysses S. Grant</strong> commissions a study of a canal route through Central America.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>1879–1888 — The French Attempt</h3>
+        <p>
+          De Lesseps begins construction of a <strong>sea-level canal</strong> in Panama. 
+          His company is devastated by disease, landslides, and bankruptcy. 
+          The French effort collapses after over 20,000 deaths and financial ruin.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>1903 — Panama Gains Independence</h3>
+        <p>
+          The U.S. supports Panama’s independence from Colombia and signs the 
+          <strong>Hay–Bunau-Varilla Treaty</strong>, granting rights to build and control the Canal Zone.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>1904–1905 — The American Effort Begins</h3>
+        <p>
+          Chief Engineer <strong>John Wallace</strong> starts work but resigns amid poor conditions. 
+          <strong>Dr. William Gorgas</strong> leads sanitation campaigns, eradicating yellow fever 
+          and malaria through mosquito control.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>1905–1907 — Stevens and Sanitation</h3>
+        <p>
+          <strong>John Stevens</strong> reorganizes the project, prioritizing infrastructure, 
+          housing, and safety. Roosevelt’s 1906 visit becomes a symbol of determination. 
+          The decision to build a <strong>lock-based canal</strong> sets the path to success.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>1907–1913 — Goethals Leads the Charge</h3>
+        <p>
+          Under <strong>George Washington Goethals</strong>, excavation at 
+          <strong>Culebra Cut</strong> and construction of the <strong>Gatún Dam</strong> 
+          proceed rapidly. Thousands of workers labor around the clock, enduring danger and heat.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>August 15, 1914 — The Canal Opens</h3>
+        <p>
+          The <strong>SS Ancon</strong> becomes the first ship to pass through the Panama Canal. 
+          Though World War I overshadows the event, the canal stands as one of the greatest 
+          engineering achievements in history.
+        </p>
+      </div>
+    </section>
   </main>
 
-  <div data-include="/PCM/partials/footer.html"></div>
+  <footer>
+    <p>Created by Arav & Deniz — © 2025 Panama Canal Digital Museum</p>
+  </footer>
 </body>
 </html>
