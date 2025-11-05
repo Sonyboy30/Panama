@@ -1,30 +1,87 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Social & Political Impact | Panama Canal Museum</title>
-  <link href="/css/style.css" rel="stylesheet" />
-  <script defer src="/js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-  <div data-include="/PCM/partials/header.html"></div>
+  <header class="sub-hero" style="background-image: url('assets/roosevelt-visit.jpg');">
+    <nav class="navbar">
+      <h1 class="logo">Panama Canal Museum</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="historical.html">Historical Background</a></li>
+        <li><a href="construction.html">Construction & Challenges</a></li>
+        <li><a href="impact.html" class="active">Social & Political Impact</a></li>
+        <li><a href="significance.html">Legacy & Significance</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="bibliography.html">Bibliography</a></li>
+      </ul>
+    </nav>
 
-  <main class="container prose">
-    <h1>Social &amp; Political Impact</h1>
-    <p class="lede">The canal was both an engineering triumph and a story of empire, labor, and segregation. West Indian workers formed the backbone of the workforce; U.S.–Panama relations evolved from the 1903 treaty to the 1977 Torrijos–Carter Treaties and the 1999 handover.</p>
-
-    <div class="gallery" data-lightbox>
-      <figure>
-        <img src="/PCM/assets/west-indian-workers.jpg" alt="Drill crew"/>
-        <figcaption>West Indian drill crew in the Cut.</figcaption>
-      </figure>
-      <figure>
-        <img src="/PCM/assets/lock-aerial.jpg" alt="Locks and townsites"/>
-        <figcaption>Locks and Canal Zone townsites reflected social hierarchies.</figcaption>
-      </figure>
+    <div class="hero-text fade-in">
+      <h2>Social & Political Impact</h2>
+      <p>Labor, segregation, and shifting sovereignty in the Canal Zone.</p>
     </div>
+  </header>
+
+  <main class="content fade-in">
+    <!-- Based on National Archives “The Panama Canal” and History.com “Panama Canal” -->
+    <section>
+      <p>
+        The Panama Canal’s construction not only transformed global trade but also reshaped the
+        social and political landscape of Panama. Thousands of workers from the Caribbean,
+        Central America, and Europe came to the isthmus seeking work — many recruited through
+        U.S. agencies and labor contractors.
+      </p>
+
+      <p>
+        Labor was organized through a rigid two-tier system known as the 
+        <strong>“Gold Roll”</strong> and <strong>“Silver Roll.”</strong> White American
+        workers were placed on the Gold Roll, receiving higher wages, better housing, and
+        privileges. Nonwhite laborers — largely West Indian and Latin American men — were
+        placed on the Silver Roll, facing lower pay, inferior housing, and segregated facilities.
+      </p>
+
+      <p>
+        Despite harsh conditions and discrimination, West Indian workers formed the backbone
+        of the project. Their endurance under brutal heat and disease was essential to
+        the canal’s completion, yet their contributions were often overlooked in early
+        American narratives.
+      </p>
+
+      <p>
+        Politically, the 1903 <strong>Hay–Bunau-Varilla Treaty</strong> granted the U.S.
+        permanent control of the Canal Zone — a decision deeply resented in Panama.
+        For decades, U.S. flags, schools, and police operated inside the zone as if it
+        were American territory. Tensions over sovereignty persisted throughout the
+        20th century until treaties in the 1970s paved the way for Panama to regain full
+        control in 1999.
+      </p>
+
+      <p>
+        The Panama Canal thus reflects not only a triumph of engineering but also a
+        complex story of <strong>imperialism, labor inequality, and resilience.</strong>
+      </p>
+    </section>
+
+    <section class="image-gallery fade-in">
+      <figure>
+        <img src="assets/workers.jpg" alt="Panama Canal workers at labor">
+        <figcaption>West Indian and Latin American workers built the canal under harsh conditions.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/roosevelt-visit.jpg" alt="President Roosevelt visiting Panama in 1906">
+        <figcaption>President Roosevelt’s 1906 visit symbolized U.S. commitment — and control.</figcaption>
+      </figure>
+    </section>
   </main>
 
-  <div data-include="/PCM/partials/footer.html"></div>
+  <footer>
+    <p>Created by Arav & Deniz — © 2025 Panama Canal Digital Museum</p>
+  </footer>
 </body>
 </html>
