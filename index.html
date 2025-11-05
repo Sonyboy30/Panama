@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panama Canal Museum | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet" />
+  <script defer src="/js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/PCM/index.html">Panama Canal Museum</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a class="active" href="/PCM/index.html">Home</a>
+        <a href="/PCM/historical.html">Historical Background</a>
+        <a href="/PCM/construction.html">Construction &amp; Challenges</a>
+        <a href="/PCM/impact.html">Social &amp; Political Impact</a>
+        <a href="/PCM/significance.html">Legacy &amp; Significance</a>
+        <a href="/PCM/timeline.html">Timeline</a>
+        <a href="/PCM/bibliography.html">Bibliography</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO (unchanged image) -->
+    <section class="hero">
+      <img class="hero-img" src="/PCM/hero-canal.jpg" alt="Aerial view of the Panama Canal and its locks"/>
+      <div class="hero-text container">
+        <h1 class="display">The Dream, The Struggle, The Legacy</h1>
+        <p>Explore the triumphs and tensions behind one of the 20th century’s greatest engineering achievements.</p>
+        <a class="btn" href="/PCM/historical.html">Experience the Canal</a>
+      </div>
+    </section>
+
+    <!-- FEATURED: interactive video + carousel gallery -->
+    <section class="container grid-2 gap-xl align-center reveal">
+      <div>
+        <h2>2‑Minute Orientation</h2>
+        <p>Start with a short video overview. Then, dive into photos from construction to the first crossing.</p>
+        <button class="btn outline" data-video="https://www.youtube.com/embed/BcOp4zOAR3Y?autoplay=1">▶ Watch Video</button>
+        <small class="muted">Source: YouTube</small>
+      </div>
+      <div>
+        <div class="carousel" aria-label="Historic photo highlights">
+          <button class="car-btn prev" aria-label="Previous">‹</button>
+          <div class="car-track">
+            <figure class="car-slide">
+              <img src="/PCM/assets/lock-aerial.jpg" alt="Locks with ships transiting"/>
+              <figcaption>Aerial of locks during transit.</figcaption>
+            </figure>
+            <figure class="car-slide">
+              <img src="/PCM/assets/roosevelt-cut.jpg" alt="Roosevelt visiting Culebra Cut"/>
+              <figcaption>Roosevelt at Culebra Cut, 1906.</figcaption>
+            </figure>
+            <figure class="car-slide">
+              <img src="/PCM/assets/gorgas-map.jpg" alt="Map of sanitized zones against mosquitoes"/>
+              <figcaption>Gorgas’s mosquito control map.</figcaption>
+            </figure>
+            <figure class="car-slide">
+              <img src="/PCM/assets/west-indian-workers.jpg" alt="West Indian drill crew in the Cut"/>
+              <figcaption>West Indian drill crew at work.</figcaption>
+            </figure>
+            <figure class="car-slide">
+              <img src="/PCM/assets/culebra-postcard.jpg" alt="Old postcard of Culebra Cut"/>
+              <figcaption>Early Culebra Cut postcard.</figcaption>
+            </figure>
+            <figure class="car-slide">
+              <img src="/PCM/assets/ss-ancon.jpg" alt="SS Ancon first official transit 1914"/>
+              <figcaption><em>SS Ancon</em>, first official transit (1914).</figcaption>
+            </figure>
+          </div>
+          <button class="car-btn next" aria-label="Next">›</button>
+          <div class="car-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK SECTIONS (cards) -->
+    <section class="container cards reveal">
+      <article class="card">
+        <h3>Historical Background</h3>
+        <p>From early visions to the failed French attempt and Roosevelt’s pivot to locks.</p>
+        <a class="btn ghost" href="/PCM/historical.html">Learn more</a>
+      </article>
+      <article class="card">
+        <h3>Construction &amp; Challenges</h3>
+        <p>Culebra Cut, dams &amp; locks, sanitation campaigns, and everyday hazards.</p>
+        <a class="btn ghost" href="/PCM/construction.html">Learn more</a>
+      </article>
+      <article class="card">
+        <h3>Social &amp; Political Impact</h3>
+        <p>Labor systems, segregation &amp; pay, sovereignty, and U.S.–Panama relations.</p>
+        <a class="btn ghost" href="/PCM/impact.html">Learn more</a>
+      </article>
+      <article class="card">
+        <h3>Legacy &amp; Significance</h3>
+        <p>Global trade, modern expansions, and canal governance.</p>
+        <a class="btn ghost" href="/PCM/significance.html">Learn more</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Created by Arav &amp; Deniz — © 2025 Panama Canal Digital Museum</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox video modal -->
+  <dialog id="videoModal" class="modal">
+    <button class="modal-close" aria-label="Close">×</button>
+    <div class="modal-body ratio-16x9">
+      <iframe id="ytFrame" title="Panama Canal Overview" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </dialog>
+</body>
+</html>
